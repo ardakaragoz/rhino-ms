@@ -83,15 +83,15 @@ function rhinoinc(çevrilecekdeğer, seçenekler) {
       } else if(birim === 'dakika'){
         return msçevir(çevrilecekdeğer) / 60000
       } else if (birim === 'saat'){
-        return msçevir(çevrilecekdeğer) / 60 * 1000 * 60
+        return msçevir(çevrilecekdeğer) / (60 * 1000 * 60)
       } else if (birim === 'gün'){
-        return msçevir(çevrilecekdeğer) / 60 * 1000 * 60 * 24
+        return msçevir(çevrilecekdeğer) / (60 * 1000 * 60 * 24)
       } else if (birim === 'hafta') {
-        return msçevir(çevrilecekdeğer) / 1000 * 60 * 60 * 24 * 7
+        return msçevir(çevrilecekdeğer) / (1000 * 60 * 60 * 24 * 7)
       } else if (birim === 'yıl') {
-        return msçevir(çevrilecekdeğer) / 1000 * 60 * 60 * 24 * 365.25
+        return msçevir(çevrilecekdeğer) / (1000 * 60 * 60 * 24 * 365.25)
       } else {
-        throw new Error('Geçersiz Çevirme Seçeneği Muhtemel Seçenekler: saniye, dakika, saat, gün, hafta, yıl (MS için seçenekler kullanmayınız.)')
+        ('Geçersiz Çevirme Seçeneği Muhtemel Seçenekler: saniye, dakika, saat, gün, hafta, yıl (MS için seçenekler kullanmayınız.)')
       }
     } else {
       console.error('Doğru Kullanım ms("7 dakika", {\nbirim: "birim")')
@@ -104,7 +104,7 @@ function rhinoinc(çevrilecekdeğer, seçenekler) {
     return çevrilecekdeğer
   }
 }
-  throw new Error('Geçersiz Bir Değer Girdiniz')
+  console.error('Geçersiz Bir Değer Girdiniz')
 }
 
 /*
