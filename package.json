@@ -1,6 +1,6 @@
 {
   "name": "rhino-ms",
-  "version": "0.2.5",
+  "version": "0.4.0",
   "description": "Türk Kullanıcılar için MS modülünün çevrilmiş hâli",
   "main": "index.js",
   "scripts": {
